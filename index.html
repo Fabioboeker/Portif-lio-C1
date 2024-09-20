@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="https://www.uniaopremoldados.com.br" target="_blank">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sobre-mim">
+    <h1> Fabio Boeker Junior </h1>
+
+    <div class="imagens-container">
+        <img src="imagem10.jpeg" alt="Imagem de Fabio" style="width:220px; height:320px">
+        <img src="imagem1.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+        <img src="imagem2.jpeg" alt="Imagem 3" style="width:220px; height:320px">
+        <img src="imagem3.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+        <img src="imagem4.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+        <img src="imagem5.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+    </div>
+
+    <h1> Sobre mim! </h1>
+
+    <p style="max-width:600px;"> Meu nome é Fabio Boeker Junior, tenho 24 anos de idade! Trabalho no ramo da construção civil, mais especificamente
+        com venda de lajes e concreto na empresa União Pré-moldados, à qual eu e meu pai somos sócios! 
+        Temos trabalhado diariamente para crescer nosso negócio e torná-lo mais sólido e próspero. Além disso, sou estudante de Análise e Desenvolvimento de Sistemas na FAESA, 
+        atualmente estou no terceiro período! Uma das coisas que eu mais gosto de fazer é viajar e estar com a minha família, que é peça fundamental na minha vida!
+    </p>
+
+    <h1> Minha família!<h1>
+
+    <div class="imagens-container">
+        <img src="imagem11.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+        <img src="imagem6.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+        <img src="imagem7.jpeg" alt="Imagem 3" style="width:220px; height:320px">
+        <img src="imagem12.jpeg" alt="Imagem 2" style="width:220px; height:320px">
+    </div>
+
+</section>
+
+<section id="contato">
+    <a href="https://www.instagram.com/fabioboeker_jr/" target="_blank">
+        <img src="instagram.jpeg" alt="iconeinstagram" style="width:50px; height:50px">
+    </a>
+    <a href="https://wa.me/+5527999997710?text=MENSAGEM Olá Fábio!" target="_blank">
+        <img src="whatts3.jpeg" alt="iconewhattsApp" style="width:50px; height: 50px;">
+    </a>
+
+   <h2> E-mail: Fabioboeker@hotmail.com</h2>
+</section>
+
+<h3> Developed by: Fabio Boeker Junior </h3>
+
+
+<script>
+    function revealOnScroll() {
+        let images = document.querySelectorAll('.imagens-container img');
+        let windowHeight = window.innerHeight;
+
+        images.forEach(function(image) {
+            let positionFromTop = image.getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                image.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); 
+</script>
+
+</body>
+</html>
